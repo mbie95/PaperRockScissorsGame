@@ -1,0 +1,45 @@
+<!--Gra papier, kamien, nozyce-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra - Papier, kamien, nozyce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>GRA "PAPIER, KAMIEN, NOZYCE"</h1>
+
+    <div class="select">
+
+        <h3>Prosze, wybierz:</h3>
+
+        <img data-option="papier" class="first" src="papier.jpg" alt="" title="Papier">
+
+        <img data-option="kamien" src="kamien.jpg" alt="" title="Kamien">
+
+        <img data-option="nozyce" src="nozyczki.jpg" alt="" title="Nozyce">
+
+    </div>
+
+    <button class="start">Let's play!</button>
+
+    <div class="panel-left">
+        <h3>Wyniki gry</h3>
+        <p>Twoj wybor: <span data-summary="your-choice"></span></p>
+        <p>Wybor komputera: <span data-summary="ai-choice"></span></p>
+        <h2>Zwyciezca gry: <span data-summary="who-win"></span></h2>
+    </div>
+
+    <div class="panel-right">
+        <h3>Aktualne wyniki</h3>
+        <p class="numbers">liczba gier: <span>0</span></p>
+        <p class="wins">wygranych: <span>0</span></p>
+        <p class="losses">przegranych: <span>0</span></p>
+        <p class="draws">remisow: <span>0</span></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
